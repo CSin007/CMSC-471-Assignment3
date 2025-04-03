@@ -13,7 +13,3 @@ The way the data is transformed is also super misleading. I left out any complai
 ### 3. Marks and Encodings
 
 Visually, the chart is set up to make it seem like complaints are dropping. I reversed the x-axis, so the most recent years are on the left and it moves backwards in time as you go right. Most people expect charts to move forward in time from left to right, so flipping it plays a trick on your brain. It makes it seem like things are getting better, when really it’s just a layout trick.
-
----
-
-If I really wanted to take it further, I could have messed with the bar widths, changed the scale on the y-axis, or added a fake note about reforms explaining the drop. But even without that, this chart already does a good job of showing how small design choices can really change how people understand data.
