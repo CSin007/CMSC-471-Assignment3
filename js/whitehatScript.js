@@ -1,6 +1,6 @@
 
    
-(async function() {
+
 
   const chartContainer = document.getElementById('chart');
   const complainantGenderFilter = document.getElementById('complainant-gender-filter');
@@ -284,5 +284,5 @@
       .text(d => d.count);
   }
   
-})(); 
+
 
