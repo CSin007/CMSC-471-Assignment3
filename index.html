@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Most NYPD Officers Are Never Found Guilty</title>
+  <title>CMSC471 Assignment 3</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <div class="container">
-    <h2 class="chart-title">Total Complained By Year have Reduced</h2>
-    <div id="chart"></div>
-    <p class="caption">This chart shows the disposition of complaints filed against NYPD officers.</p>
+
+        <h1>Choose a Page</h1>
+        <div class="button-container">
+            <button class="nav-button" onclick="page1()">White Hat Visualization</button>
+            <button class="nav-button" onclick="page2()">Black Hat Visualization</button>
+        </div>
+
   </div>
 
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
+
+  <script>
+    function page1() {
+        window.location.href = "whitehat.html";
+    }
+    
+    function page2() {
+        window.location.href = "blackhat.html";
+    }
+</script>
