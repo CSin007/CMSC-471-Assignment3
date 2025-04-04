@@ -1,6 +1,6 @@
 console.log('Script loaded!');
 
-d3.csv("data/allegations.csv").then(function(data) {
+d3.csv("./data/allegations.csv").then(function(data) {
   // Filter data
   const excludedYears = ['2016', '2007', '2020'];
 const filteredData = data.filter(d => {
