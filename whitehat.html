@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Police Complaints by Race</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .controls {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      border: 1px solid #e9ecef;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .control-group {
+      flex: 1;
+      min-width: 200px;
+    }
+    .control-group h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    select, button {
+      padding: 8px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      width: 100%;
+      font-size: 14px;
+    }
+    .chart-container {
+      position: relative;
+      height: 700px;
+      border: 1px solid #e9ecef;
+      border-radius: 5px;
+      background-color: white;
+      overflow: hidden;
+    }
+    .tooltip {
+      position: absolute;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      pointer-events: none;
+      font-size: 14px;
+      max-width: 300px;
+    }
+    .tooltip h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    .tooltip p {
+      margin: 5px 0;
+    }
+    .axis-label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 18px;
+      color: #6c757d;
+    }
+    .error {
+      color: #dc3545;
+      padding: 20px;
+      text-align: center;
+    }
+    .legend {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Police Complaints: Racial Dynamics Analysis</h1>
+    
+    <div class="controls">
+      <div class="control-group">
+        <h3>Complainant Gender Filter</h3>
+        <select id="complainant-gender-filter">
+          <option value="all">All Genders</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      
+      <div class="control-group">
+        <h3>Officer Gender Filter</h3>
+        <select id="officer-gender-filter">
+          <option value="all">All Genders</option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+      </div>
+      
+      <div class="control-group">
+        <h3>Category of complaint</h3>
+        <select id="fado-filter">
+          <option value="Abuse of Authority">Abuse of Authority</option>
+          <option value="Force">Force</option>
+          <option value="Offensive Language">Offensive Language</option>
+          <option value="Discourtesy">Discourtesy</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="chart-container" id="chart">
+      <div class="loading">Loading data...</div>
+    </div>
+    
+    <div class="legend" id="legend">
+      <p>Bubble size represents the number of complaints. Hover over bubbles for details.</p>
+    </div>
+    
+  </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/whitehatScript.js"></script>
+</body>
+</html>
