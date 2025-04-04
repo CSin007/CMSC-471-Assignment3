@@ -3,15 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Most NYPD Officers Are Never Found Guilty</title>
+  <title>Improvements of NYPD officers over time</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <div class="container">
-    <h2 class="chart-title">Total Complained By Year have Reduced</h2>
-    <div id="chart"></div>
-    <p class="caption">This chart shows the disposition of complaints filed against NYPD officers.</p>
+    <h2 class="chart-title">Total Complaints against NYPD have Reduced</h2>
+    <div style="overflow-x: auto; width: 100%;">
+      <div id="chart"></div>
+    </div>
+    
+    <p class="caption">This chart shows the reduction of complaints filed against NYPD officers.</p>
   </div>
+  <div class="write-up" style="margin-top: 30px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <h3 style="color: #333;">Write-Up: The Illusion of Progress — A Black Hat Visualization</h3>
+    <p>
+      This bar chart presents what appears to be a dramatic decrease in complaints filed against NYPD officers over time. However, beneath its clean aesthetic lies a carefully crafted manipulation of the viewer’s perception, using black-hat techniques that mislead through design, data transformation, and labeling.
+    </p>
+    <p>
+      First, the data itself has been selectively filtered. Key years such as 2007, 2016, and 2020 and years before 2000 have been removed from the dataset. These years include high-profile events and spikes in complaint volumes. Their exclusion flattens the trendline and removes any anomalies that might disrupt the illusion of improvement.
+    </p>
+    <p>
+      Second, the visual encoding further exaggerates the downward trend. The years on the x-axis are deliberately reversed, placing the most recent years on the left and older years on the right. This inversion goes against natural reading flow and tricks the viewer into seeing the trend as recent improvement.
+    </p>
+    <p>
+      The green title, “Total Complaints By Year have Reduced,” adds a positive emotional tone that reinforces this narrative. Yet this is not an objective statement; it is a stylistic choice that supports a misleading story. The chart also lacks a clear y-axis label, which removes important context.
+    </p>
+    <p>
+      Through selective omission, flipped axes, and emotionally charged labels, this visualization manipulates how the data is interpreted. It highlights how choices in marks, encodings, and labels can significantly distort a dataset’s true message.
+    </p>
+  </div>
+  
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="js/script.js"></script>

@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    max-width: 700px;
+    max-width: 960px;
     margin: 50px auto;
     background: #fff;
     padding: 30px;
@@ -16,7 +16,7 @@ body {
   }
   
   .chart-title {
-    color: darkgreen;
+    color: rgb(35, 122, 35);
     font-size: 24px;
     margin-bottom: 10px;
   }
